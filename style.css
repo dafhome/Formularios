@@ -1,6 +1,24 @@
 body{
     background-color: #64CBC4;
 }
+.cuerpo{
+    background-color: #033549;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 100px;
+    
+}
+.prueba{
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+}
 
 .container{
     display: flex;
@@ -12,17 +30,41 @@ body{
     background-color: #033549;
     margin: 2%;
     border-radius: 10px;
+    box-shadow: 15px 15px 15px #03354992;
 }
 
 .formulario{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     background-color: white;
     border-radius: 5px;
     padding-top: 4vh;
     padding-bottom: 4vh;
     align-items: center;
+    width: 500px;
+    box-shadow: 5px 5px 5px #64cbc482;
+
+    :nth-child(1),:nth-child(3){
+        display:inline; 
+        width: 90%;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        border-bottom-style:solid;
+        border-bottom-width: 3px;
+        border-color: white;
+        border-bottom-color: #033549c5;
+    }
+    :nth-child(12){
+        display:inline; 
+        /* width: 90%; */
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        border-bottom-style:solid;
+        border-bottom-width: 3px;
+        border-color: white;
+        border-bottom-color: #033549c5;
+    }
+
+
 }
 
 
@@ -30,10 +72,12 @@ body{
     align-items: center;
 
 } */
-
-form{
-    width: 500px;
+label{
+    display: none;
+    
 }
+
+
 
 textarea{
     border-radius: 5px;
@@ -42,11 +86,14 @@ textarea{
 }
 
 input, textarea{
-    border-radius: 10px;
+    
     border-style: none;
     /* height: 30px; */
     padding: 15px;
     width: 80%;
+    border-width: 0 0 2px 0;
+    border-color: lightgrey;
+    border-style: solid;
 }
 
 h1{
@@ -54,7 +101,14 @@ h1{
     font-size: 30px;
     color: white;
 }
-span{
+
+h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.span{
     color: #64CBC4;
     font-size: xx-large;
 }
@@ -64,12 +118,10 @@ p{
     font-family: 'Roboto', sans-serif;
     line-height: 25px;
     color: white;
-
 }
 
-label{
-    display: none;
-    
+.parrafo{
+    font-size: x-large;
 }
 
 
@@ -84,4 +136,18 @@ button{
     font-size: 30px;
 
 
+}
+.button{
+    background-color: #64CBC4;
+    
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 350px;
+ 
 }
